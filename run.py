@@ -1,12 +1,18 @@
-# Importing essential libraries 
+# importing pickle module to load the saved model
 import pickle
 
+# importing os module to get the current working directory
 import os
 
+# Importing joblib and numpy for loading the model and data processing
 import joblib
 import numpy as np
-#import tensorflow as tf
-#from PIL import Image
+
+# Below two libraries are used for image processing and prediction of Malaria
+import tensorflow as tf
+from PIL import Image
+
+# Importing flask module in the project is mandatory
 from flask import Flask, render_template, request, redirect, url_for, flash
 
 app = Flask(__name__)
